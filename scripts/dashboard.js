@@ -6,7 +6,7 @@
 
 
 async function loadVillas() {
-    const res = await fetch('http://localhost:3000/api/villas', {
+    const res = await fetch('https://villa-backend.onrender.com/api/villas', {
       credentials: 'include'
     });
   

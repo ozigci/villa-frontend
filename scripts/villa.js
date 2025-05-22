@@ -25,7 +25,7 @@ async function save() {
     quantity: input.value
   }));
 
-  await fetch(`http://localhost:3000/api/villas/${villaId}/items`, {
+  const res = await fetch('https://villa-backend.onrender.com/api/villas', {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
